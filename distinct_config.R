@@ -1,5 +1,10 @@
 #!/bin/Rscript
 
+#####################################################################################################
+#----------------------------------  T. Ruzmetov, October 19, 2017 ---------------------------------#
+# This code calculates number of unique configurations per binding attempt for bimolecular binding.
+# It reads
+
 # read data
 input_file <- "./tmp"
 data <- read.table(input_file, sep="", header = FALSE)
@@ -17,7 +22,7 @@ dq_thresh <- 3 # threshold in q to distinguish configurations
 uniq <- 0 
 
 #loop over list elements(data.frames)
-for(i in 1:(N-1)){
+for(i in 1:N){
     #drop first col from each since its not needed
     dframes[[i]] <- dframes[[i]][-1]
     
