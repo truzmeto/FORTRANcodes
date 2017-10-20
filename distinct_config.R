@@ -54,4 +54,10 @@ for(i in 1:N){
     uniq[i] <- k 
 }
 
-print(uniq)
+# print out n_esc, sum of all uniq confs over all attampts, uniq confs for the last attempt
+
+configs <- sum(uniq[-N])
+last_att <- uniq[N]
+output <- data.frame(N-1, configs, last_att)
+write.table(output, file ="", row.names = FALSE, col.names = FALSE, sep = "  ")
+
