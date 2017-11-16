@@ -165,8 +165,8 @@ program ExtractKinSteps
         n_esc = n_esc + 1
      endif
 
-     ! write(*,'(<ncon12>(i2,1x))')(icontact(i), i = 1, ncon12)
-     if(q.ne.0) write(*,'(i3,2x,<ncon12>(i2,1x))') n_esc, (icontact(i), i = 1, ncon12) !! ???????????????
+     !write(*,'(<ncon12>(i2,1x))')(icontact(i), i = 1, ncon12)
+     if(q.ne.0) write(*,'(i3,2x,<ncon12>(i2,1x))') n_esc, (icontact(i), i = 1, ncon12) 
      
   end do
 
